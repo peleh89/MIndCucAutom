@@ -42,12 +42,12 @@ public class HRAppQATestSteps {
     }
 
     @Then("user validates that employee data in UI matches with Database data with employee id {int}")
-    public void user_validates_that_employee_data_in_UI_matches_with_Database_data_with_employee_id(int employeeId) throws SQLException {
-        JDBCUtils.establishConnection();
-        List<Map<String,Object>> data = JDBCUtils.runQuery("SELECT * FROM employees WHERE employee_id="+employeeId);
+    public void user_validates_that_employee_data_in_UI_matches_with_Database_data_with_employee_id(int employeeId){ //throws SQLException {
+        //JDBCUtils.establishConnection();
+       // List<Map<String,Object>> data = JDBCUtils.runQuery("SELECT * FROM employees WHERE employee_id="+employeeId);
 
-        List<WebElement> employeeRow = driver.findElements(By.xpath("//div/table/tbody[2]"));
-        System.out.println(employeeRow.get(1).getText());
+        //List<WebElement> employeeRow = driver.findElements(By.xpath("//div/table/tbody[2]"));
+        //System.out.println(employeeRow.get(1).getText());
 
 
     }

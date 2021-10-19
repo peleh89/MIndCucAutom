@@ -1,0 +1,4 @@
+file:src/test/resources/features/HRAppDBTest.feature:3
+file:src/test/resources/features/HRAppDbProjectTest.feature:11:12:13
+file:src/test/resources/features/WebOrdersOrderCreationTest.feature:33:34
+file:src/test/resources/features/HrAppApiTest.feature:15:16
